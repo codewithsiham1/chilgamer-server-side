@@ -83,7 +83,7 @@ async function run() {
       const result = await reviewCollection.updateOne(filter, { $set: updatedDoc });
       res.send(result);
   });
-// ওয়াচলিস্ট এপিআই
+
 app.post('/watchlist', async (req, res) => {
   try {
       const newWatchlistItem = req.body;
